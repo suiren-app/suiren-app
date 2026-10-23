@@ -1,0 +1,69 @@
+:root {
+  --paper: #f6f1e7;
+  --card: #fbf8f1;
+  --ink: #2b2620;
+  --muted: #6b6257;
+  --persimmon: #a94a34;
+  --gold: #b8975a;
+  --line: rgba(184, 151, 90, 0.55);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #1b1915;
+    --card: #23201b;
+    --ink: #ece5d8;
+    --muted: #a99f90;
+    --persimmon: #e08a72;
+    --gold: #c9a96a;
+    --line: rgba(201, 169, 106, 0.4);
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Hiragino Mincho ProN", "Segoe UI", Georgia, serif;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+header.site {
+  border-bottom: 1px solid var(--line);
+  padding: 18px 0;
+}
+header.site .wrap { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.brand { font-size: 20px; font-weight: 600; color: var(--ink); text-decoration: none; letter-spacing: 0.02em; }
+.brand span { color: var(--persimmon); margin-left: 6px; font-weight: 400; }
+nav a { color: var(--muted); text-decoration: none; margin-left: 16px; font-size: 15px; }
+nav a:first-child { margin-left: 0; }
+nav a:hover, nav a[aria-current="page"] { color: var(--persimmon); }
+main { padding: 40px 0 56px; }
+h1 { font-size: 34px; line-height: 1.2; margin: 0 0 8px; font-weight: 600; }
+h2 { font-size: 21px; margin: 36px 0 8px; font-weight: 600; }
+p, li { color: var(--ink); }
+.lede { font-size: 20px; color: var(--muted); margin: 0 0 28px; }
+.updated { color: var(--muted); font-size: 14px; margin: 0 0 28px; }
+a { color: var(--persimmon); }
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin: 20px 0;
+}
+.button {
+  display: inline-block;
+  background: var(--persimmon);
+  color: #fff;
+  text-decoration: none;
+  padding: 11px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+@media (prefers-color-scheme: dark) { .button { color: #1b1915; } }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin: 28px 0; }
+.grid .card { margin: 0; }
+.grid h3 { margin: 0 0 4px; font-size: 17px; }
+.grid p { margin: 0; color: var(--muted); font-size: 15px; }
+footer.site { border-top: 1px solid var(--line); padding: 20px 0 32px; color: var(--muted); font-size: 14px; }
+footer.site a { color: var(--muted); margin-right: 14px; }
