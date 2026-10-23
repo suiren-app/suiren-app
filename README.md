@@ -11,4 +11,4 @@ The public website for **Suiren: Koi Pond Habit Tracker**, an iPhone app. It's s
 
 The App Store listing and the app link to these URLs, so keep the paths stable.
 
-Need help with the app? [Open an issue](https://github.com/marcinknara/suiren-app/issues/new).
+Need help with the app? Email suiren-app@gmail.com or [open an issue](https://github.com/marcinknara/suiren-app/issues/new).
