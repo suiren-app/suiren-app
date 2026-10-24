@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A friend invited you · Suiren</title>
+<meta name="description" content="A friend invited you to keep a koi pond in Suiren. Accept their invite and you both get a storey on a friendship pagoda.">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .code { font: 600 34px/1.2 ui-monospace, Menlo, monospace; letter-spacing: 0.18em; margin: 6px 0 2px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
+  .button.quiet { background: transparent; color: var(--persimmon); border: 1px solid var(--line); }
+  ol li { margin-bottom: 6px; }
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="../">Suiren<span>睡蓮</span></a>
+    <nav>
+      <a href="../privacy/">Privacy</a>
+      <a href="../support/">Support</a>
+      <a href="../terms/">Terms</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+
+    <h1>A friend invited you</h1>
+    <p class="lede">Keep a habit, raise a koi. Accept your friend's invite and you'll both get a storey on a friendship pagoda, banded in a colour from both your koi.</p>
+
+    <div class="card" id="invite">
+      <p style="margin:0;color:var(--muted)">Your invite code</p>
+      <p class="code" id="code">······</p>
+      <div class="actions">
+        <a class="button" id="open" href="suiren://invite">Open in Suiren</a>
+        <a class="button quiet" href="https://apps.apple.com/app/id6826411943">Get Suiren on the App Store</a>
+      </div>
+    </div>
+
+    <h2>How to accept</h2>
+    <ol>
+      <li>Install Suiren from the App Store, if you haven't yet.</li>
+      <li>Come back to this page and tap <strong>Open in Suiren</strong>, or type the code in <strong>Settings → Friends → I was invited</strong>.</li>
+      <li>Accept once your first koi has hatched. Your friend's storey appears the next time they open Suiren.</li>
+    </ol>
+    <p>Invites use iCloud. Suiren saves only the code, a colour and an anonymous iCloud ID, never your name or contacts. See the <a href="../privacy/">Privacy Policy</a>.</p>
+
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <a href="../privacy/">Privacy Policy</a><a href="../support/">Support</a><a href="../terms/">Terms of Use</a>
+    <p>Suiren: Koi Pond Habit Tracker, for iPhone.</p>
+  </div>
+</footer>
+<script>
+  // The code comes from ?c=, from letters without look-alikes (no 0, O, 1, I, L).
+  var code = (new URLSearchParams(location.search).get("c") || "").toUpperCase().replace(/[^23456789ABCDEFGHJKMNPQRSTUVWXYZ]/g, "").slice(0, 6);
+  if (code.length === 6) {
+    document.getElementById("code").textContent = code;
+    document.getElementById("open").href = "suiren://invite?c=" + code;
+  } else {
+    document.getElementById("invite").innerHTML = "<p style=\"margin:0\">This link is missing its invite code. Ask your friend to send it again, or type the code they gave you in <strong>Settings → Friends → I was invited</strong>.</p>";
+  }
+</script>
+</body>
+</html>
