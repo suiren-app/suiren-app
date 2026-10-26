@@ -1,14 +1,14 @@
 # Suiren
 
-The public website for **Suiren: Koi Pond Habit Tracker**, an iPhone app. It's served with GitHub Pages at <https://suiren-app.github.io/suiren-app/>.
+The public website for **Suiren: Koi Pond Habit Tracker**, an iPhone app. It's served with GitHub Pages at <https://suirenapp.com/> (the old address, suiren-app.github.io/suiren-app, redirects there).
 
 | Page | URL |
 | --- | --- |
-| Home | https://suiren-app.github.io/suiren-app/ |
-| Privacy Policy | https://suiren-app.github.io/suiren-app/privacy/ |
-| Support | https://suiren-app.github.io/suiren-app/support/ |
-| Terms of Use | https://suiren-app.github.io/suiren-app/terms/ |
-| Friend invite | https://suiren-app.github.io/suiren-app/invite/?c=CODE |
+| Home | https://suirenapp.com/ |
+| Privacy Policy | https://suirenapp.com/privacy/ |
+| Support | https://suirenapp.com/support/ |
+| Terms of Use | https://suirenapp.com/terms/ |
+| Friend invite | https://suirenapp.com/invite/?c=CODE |
 
 The App Store listing and the app link to these URLs, so keep the paths stable.
 
