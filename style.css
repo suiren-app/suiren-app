@@ -24,8 +24,9 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Hiragino Mincho ProN", "Segoe UI", Georgia, serif;
+  font: 17px/1.7 "Zen Kaku Gothic New", "Hiragino Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
+h1, h2, h3, .brand { font-family: "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", Georgia, serif; text-wrap: balance; }
 .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
 header.site {
   border-bottom: 1px solid var(--line);

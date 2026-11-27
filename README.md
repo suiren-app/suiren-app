@@ -18,6 +18,8 @@ App Store: https://apps.apple.com/app/suiren-koi-pond-habit-tracker/id6826411943
 
 ## Updating
 
+- **Home page:** `index.html` + `home.css`. The koi pond is `js/pond.js`, a port of the app's KoiArt (look), KoiNode (pose) and KoiBrain (behaviour), so the koi swim like they do in Suiren. Tapping the pond drops food. It draws a still frame for reduced motion and pauses when the pond is off screen. The other pages use `style.css`.
+
 - **New release:** in `whats-new/index.html`, add an `<article class="release">` at the top with the App Store "What's New" text from `CHANGELOG.md` in the app repo. Mark the live version with `pill now` ("On the App Store") and an upcoming one with `pill soon`.
 - **Screenshots:** `img/shots/` holds the framed App Store screenshots, 600 px wide JPEGs. `img/hero.jpg` is the App Store header creative and `img/og.jpg` the link preview image.
 - **App Store badge:** `img/app-store-badge.svg` is Apple's official black "Download on the App Store" badge, from Apple's marketing guidelines. Don't edit or recolor it, keep it at least 40 px tall, and leave a quarter of its height clear around it.
