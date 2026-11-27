@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Suiren: Koi Pond Habit Tracker for iPhone</title>
 <meta name="description" content="Suiren is a calm habit tracker for iPhone. Keep a habit and a koi grows in your pond. Free on the App Store.">
 <meta name="apple-itunes-app" content="app-id=6826411943">
-<meta name="theme-color" content="#f6f1e7" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#1b1915" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#173f4a">
 <link rel="canonical" href="https://suirenapp.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Suiren">
@@ -18,83 +17,125 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="home.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Suiren: Koi Pond Habit Tracker","operatingSystem":"iOS","applicationCategory":"HealthApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"url":"https://suirenapp.com/","installUrl":"https://apps.apple.com/app/suiren-koi-pond-habit-tracker/id6826411943","image":"https://suirenapp.com/img/icon-512.png"}
 </script>
+<script src="js/pond.js" defer></script>
 </head>
 <body>
-<header class="site">
+<section class="a-hero">
+  <canvas id="a-pond" role="img" aria-label="Koi swimming in a pond among lily pads. Tap the water to drop food."></canvas>
   <div class="wrap">
-    <a class="brand" href=""><img src="img/icon-64.png" alt="" width="28" height="28">Suiren<span>睡蓮</span></a>
-    <nav>
-      <a href="whats-new/">What's new</a>
-      <a href="support/">Support</a>
-      <a href="privacy/">Privacy</a>
-      <a href="terms/">Terms</a>
-    </nav>
-  </div>
-</header>
-<main>
-  <section class="hero">
-    <div class="wrap">
-      <img class="app-icon" src="img/icon-512.png" alt="The Suiren app icon" width="104" height="104">
-      <h1>Raise a koi, keep a habit.</h1>
-      <p class="lede">Suiren (睡蓮, “water lily”, said <em>SWEE-ren</em>) is a quiet habit tracker for iPhone. Each day you keep your habit, your koi grows, and your pond grows with it.</p>
-      <p class="get">
-        <a class="badge" href="https://apps.apple.com/app/suiren-koi-pond-habit-tracker/id6826411943"><img src="img/app-store-badge.svg" alt="Download on the App Store" width="150" height="50"></a>
-      </p>
-      <p class="small">Free, with optional Suiren+. For iPhone, in the US App Store.</p>
-    </div>
-    <div class="hero-art"><img src="img/hero.jpg" alt="Five iPhones showing a koi pond, the daily check-in, a koi close-up and meditation, under the words “A koi for every habit”" width="1920" height="823"></div>
-  </section>
-
-  <section class="shots" aria-labelledby="shots-title">
-    <div class="wrap">
-      <h2 id="shots-title">A look inside</h2>
-      <p class="muted">Swipe through, or scroll sideways.</p>
-    </div>
-    <ul class="gallery" tabindex="0" aria-label="App screenshots">
-      <li><img src="img/shots/01-pond.jpg" loading="lazy" width="600" height="1304" alt="Each habit gets its own koi. Check in every day and your koi grows up in a pond you build."></li>
-      <li><img src="img/shots/02-koi.jpg" loading="lazy" width="600" height="1304" alt="Every koi is one of a kind: its own colors, fins and name, growing with your habit."></li>
-      <li><img src="img/shots/03-check-in.jpg" loading="lazy" width="600" height="1304" alt="Check in with one tap. Keep a streak and earn XP for your garden."></li>
-      <li><img src="img/shots/04-hatch.jpg" loading="lazy" width="600" height="1304" alt="New habits start as eggs. Name the egg and it hatches a few seconds later."></li>
-      <li><img src="img/shots/05-garden.jpg" loading="lazy" width="600" height="1304" alt="Build the garden with XP: bridges, lanterns, trees, islands and a zen garden to rake."></li>
-      <li><img src="img/shots/06-journal.jpg" loading="lazy" width="600" height="1304" alt="See every day you kept: a calendar, milestones, notes and how you felt."></li>
-      <li><img src="img/shots/07-rest-days.jpg" loading="lazy" width="600" height="1304" alt="Rest days are built in. Pick the days and the time of day, or pause and keep your streak."></li>
-      <li><img src="img/shots/08-meditate.jpg" loading="lazy" width="600" height="1304" alt="Meditate by the pond. Words float on the water, the koi circle them, and soft music plays."></li>
-      <li><img src="img/shots/09-widgets.jpg" loading="lazy" width="600" height="1304" alt="Check in from a widget. See your koi and check in from the Home Screen."></li>
-      <li><img src="img/shots/10-night.jpg" loading="lazy" width="600" height="1304" alt="The pond follows the day. Lanterns glow and fireflies come out at night."></li>
-    </ul>
-  </section>
-
-  <div class="wrap">
-    <h2>Why people keep their koi</h2>
-    <div class="grid">
-      <div class="card"><h3>One koi per habit</h3><p>Hatch an egg, name your koi, and watch it grow as your streak does.</p></div>
-      <div class="card"><h3>A pond of your own</h3><p>Build a garden with lily pads, bridges, lanterns and waterfalls.</p></div>
-      <div class="card"><h3>Rest days, no guilt</h3><p>Set the days a habit is due, or let the pond sitter mind things while you're away.</p></div>
-      <div class="card"><h3>Meditation mode</h3><p>Set your phone down and the pond becomes a calm, drifting screensaver.</p></div>
-      <div class="card"><h3>Widgets and Apple Health</h3><p>Check in from your Home Screen, or let steps, sleep and workouts check in for you.</p></div>
-      <div class="card"><h3>Yours alone</h3><p>No account, no ads, no tracking. Your habits stay on your iPhone.</p></div>
-    </div>
-
-    <div class="card cta">
-      <div>
-        <h3>Suiren 1.5 is on its way</h3>
-        <p>Meditation music, a zen garden to rake, a gentler Peaceful mode and much more. <a href="whats-new/">See what's new</a>.</p>
+    <header class="site-head">
+      <a class="brand" href="./"><img src="img/icon-64.png" alt="" width="30" height="30">Suiren <em>睡蓮</em></a>
+      <nav class="site-nav"><a href="whats-new/">What's new</a><a href="support/">Support</a><a href="privacy/">Privacy</a><a href="terms/">Terms</a></nav>
+    </header>
+    <div class="a-hero-body">
+      <p class="eyebrow" style="color:#f0c47a">Habit tracker for iPhone</p>
+      <h1 style="margin-top:14px">Raise a koi,<br>keep a habit.</h1>
+      <p class="lede">Every habit hatches its own koi. Keep it up and your koi grows, and the pond you build around it grows too.</p>
+      <div class="get">
+        <a class="badge" href="https://apps.apple.com/app/suiren-koi-pond-habit-tracker/id6826411943"><img src="img/app-store-badge.svg" alt="Download on the App Store" width="156" height="52"></a>
+        <span class="hint"><i></i>Tap the water to drop some food</span>
       </div>
     </div>
+  </div>
+</section>
+<svg class="a-wave" viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 30 C 160 6, 320 6, 480 26 S 800 52, 960 30 S 1280 4, 1440 24 V56 H0Z"/><path fill="none" stroke="#b8903f" stroke-opacity=".6" stroke-width="1.2" d="M0 30 C 160 6, 320 6, 480 26 S 800 52, 960 30 S 1280 4, 1440 24"/></svg>
 
-    <p>Need a hand? Visit <a href="support/">Support</a>. Read how we treat your data in the <a href="privacy/">Privacy Policy</a>.</p>
-  </div>
-</main>
-<footer class="site">
+<section class="a-sec">
   <div class="wrap">
-    <a href="whats-new/">What's new</a><a href="support/">Support</a><a href="privacy/">Privacy Policy</a><a href="terms/">Terms of Use</a><a href="https://apps.apple.com/app/suiren-koi-pond-habit-tracker/id6826411943">App Store</a>
-    <p>Suiren: Koi Pond Habit Tracker, for iPhone. Made by Marcin Knara.</p>
-    <p class="legal">Apple, the Apple logo, iPhone and App Store are trademarks of Apple Inc., registered in the U.S. and other countries.</p>
+    <div class="a-sec-head">
+      <p class="eyebrow">How it works</p>
+      <h2>From egg to elder, one day at a time</h2>
+      <p>No points to chase and no red Xs. Just a fish that's glad you came back.</p>
+    </div>
+    <div class="a-steps">
+      <div class="a-step"><canvas data-mini="egg" aria-hidden="true"></canvas><h3>Add a habit, get an egg</h3><p>Name it, and a few seconds later your koi hatches into the pond.</p></div>
+      <div class="a-step"><canvas data-mini="grow" aria-hidden="true"></canvas><h3>Check in, and it grows</h3><p>One tap a day. Your koi grows from fry to elder and learns new tricks.</p></div>
+      <div class="a-step"><canvas data-mini="pond" aria-hidden="true"></canvas><h3>Build the garden</h3><p>Spend the XP you earn on bridges, lanterns, trees and lily pads.</p></div>
+    </div>
   </div>
-</footer>
+</section>
+
+<section class="a-sec tile">
+  <div class="wrap">
+    <div class="a-sec-head">
+      <p class="eyebrow">A look inside</p>
+      <h2>A pond that's yours alone</h2>
+    </div>
+  </div>
+  <ul class="gallery wrap" style="max-width:none;padding-left:max(20px,calc((100vw - 1080px)/2 + 20px))">
+    <li><img width="600" height="1304" src="img/shots/01-pond.jpg" alt="Each habit gets its own koi" loading="lazy"></li>
+    <li><img width="600" height="1304" src="img/shots/02-koi.jpg" alt="Every koi is one of a kind" loading="lazy"></li>
+    <li><img width="600" height="1304" src="img/shots/03-check-in.jpg" alt="Check in with one tap" loading="lazy"></li>
+    <li><img width="600" height="1304" src="img/shots/04-hatch.jpg" alt="New habits start as eggs" loading="lazy"></li>
+    <li><img width="600" height="1304" src="img/shots/05-garden.jpg" alt="Build the garden with XP" loading="lazy"></li>
+    <li><img width="600" height="1304" src="img/shots/06-journal.jpg" alt="See every day you kept" loading="lazy"></li>
+    <li><img width="600" height="1304" src="img/shots/07-rest-days.jpg" alt="Rest days are built in" loading="lazy"></li>
+    <li><img width="600" height="1304" src="img/shots/08-meditate.jpg" alt="Meditate by the pond" loading="lazy"></li>
+    <li><img width="600" height="1304" src="img/shots/09-widgets.jpg" alt="Check in from a widget" loading="lazy"></li>
+    <li><img width="600" height="1304" src="img/shots/10-night.jpg" alt="The pond follows the day" loading="lazy"></li>
+  </ul>
+</section>
+
+<section class="a-sec">
+  <div class="wrap">
+    <div class="a-sec-head">
+      <p class="eyebrow">Made to be gentle</p>
+      <h2>Calm by design</h2>
+    </div>
+    <div class="a-feats">
+      <div class="a-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12c3-5 13-5 16 0-3 5-13 5-16 0z"/><circle cx="15" cy="11" r="1"/></svg><h3>Rest days, no guilt</h3><p>Pick the days a habit is due. The pond sitter minds your koi while you're away.</p></div>
+      <div class="a-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><path d="M12 4v16M4 12h16" opacity=".4"/></svg><h3>Meditate by the pond</h3><p>Set the phone down. Words float on the water and the koi circle them.</p></div>
+      <div class="a-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="16" height="7" rx="2"/></svg><h3>Widgets and Apple Health</h3><p>Check in from the Home Screen, or let steps, sleep and workouts do it for you.</p></div>
+      <div class="a-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z"/></svg><h3>Yours alone</h3><p>No account, no ads, no tracking. Your habits stay on your iPhone.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="a-sec tile">
+  <div class="wrap a-new">
+    <div>
+      <span class="pill">Coming in 1.5</span>
+      <h2 style="font-size:clamp(28px,4vw,38px);margin-top:16px">Music, raked gravel and a Peaceful mode</h2>
+      <ul>
+        <li>Songs that drift through meditation</li>
+        <li>A zen garden bed you rake by hand</li>
+        <li>Peaceful mode: missed days never cost a thing</li>
+        <li>Your koi in the Dynamic Island during a focus</li>
+      </ul>
+      <a class="a-btn" href="whats-new/">See everything new</a>
+    </div>
+    <figure><img width="1920" height="823" src="img/hero.jpg" alt="Five iPhones showing Suiren under the words A koi for every habit" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="a-sec">
+  <div class="wrap narrow faq">
+    <div class="a-sec-head"><p class="eyebrow">Questions</p><h2>Before you dive in</h2></div>
+    <details><summary>Is Suiren free?</summary><p>Yes. You can keep up to 3 habits for free. Suiren+ raises that to 15 and adds a bigger starting plot.</p></details>
+    <details><summary>What happens if I miss a day?</summary><p>Your koi waits for you. Set rest days, send the pond sitter while you travel, or choose Peaceful mode in 1.5 so missed days never cost anything.</p></details>
+    <details><summary>Do I need an account?</summary><p>No. There's no sign-up. Your pond lives on your iPhone, with an optional iCloud Drive backup.</p></details>
+  </div>
+</section>
+
+<section class="a-final">
+  <canvas id="a-final" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <h2>Your first koi is waiting</h2>
+    <p>Free on the App Store, for iPhone.</p>
+    <a class="badge" href="https://apps.apple.com/app/suiren-koi-pond-habit-tracker/id6826411943"><img src="img/app-store-badge.svg" alt="Download on the App Store" width="156" height="52"></a>
+  </div>
+</section>
+<footer class="a-foot"><div class="wrap foot">
+  <nav><a href="whats-new/">What's new</a><a href="support/">Support</a><a href="privacy/">Privacy Policy</a><a href="terms/">Terms of Use</a><a href="discord/">Discord</a><a href="https://apps.apple.com/app/suiren-koi-pond-habit-tracker/id6826411943">App Store</a></nav>
+  <p>Suiren: Koi Pond Habit Tracker, for iPhone. Made by Marcin Knara.</p>
+  <p class="legal">Apple, the Apple logo, iPhone and App Store are trademarks of Apple Inc., registered in the U.S. and other countries.</p>
+</div></footer>
 </body>
 </html>
