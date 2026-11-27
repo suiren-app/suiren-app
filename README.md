@@ -7,6 +7,7 @@ The public website for **Suiren: Koi Pond Habit Tracker**, an iPhone app. It's s
 | Home | https://suirenapp.com/ |
 | Privacy Policy | https://suirenapp.com/privacy/ |
 | What's new | https://suirenapp.com/whats-new/ |
+| Community | https://suirenapp.com/community/ |
 | Support | https://suirenapp.com/support/ |
 | Terms of Use | https://suirenapp.com/terms/ |
 | Discord (forwards to the invite) | https://suirenapp.com/discord/ |
