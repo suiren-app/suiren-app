@@ -301,7 +301,12 @@ function pondScene(canvas, { count = 6, pads = 5, feed = true, lantern = false, 
   new ResizeObserver(setup).observe(canvas);
   new IntersectionObserver(([e]) => { visible = e.isIntersecting; }).observe(canvas);
   const pt = e => { const r = canvas.getBoundingClientRect(); return { x: e.clientX - r.left, y: e.clientY - r.top }; };
-  if (feed) canvas.addEventListener("click", e => {
+  // Listen on the whole hero, not just the canvas: the header and text sit above the
+  // canvas and used to swallow taps, so food only landed at the edges.
+  const tapArea = canvas.closest(".a-hero, .a-final") || canvas;
+  if (feed) tapArea.addEventListener("click", e => {
+    if (e.target.closest("a, button, input, select, textarea, label, summary")) return;
+    if (String(getSelection?.() || "").length) return;
     const p = pt(e); world.ripple(p.x, p.y, 1.4);
     for (let i = 0; i < 4; i++) world.food.push({ x: p.x + rnd(-22, 22), y: p.y + rnd(-22, 22), born: t });
   });
